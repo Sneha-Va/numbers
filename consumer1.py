@@ -16,7 +16,7 @@ for i in consumer:
         reverse=random_rev%10
         reverse_num=(reverse_num*10)+reverse
         random_rev=random_rev//10
-    sql="INSERT INTO `reversenumber`(`reverse`) VALUES (%s)"
+    sql="INSERT INTO `revnumber`(`reverse`) VALUES (%s)"
     data=(reverse_num,)
     mycursor.execute(sql,data)
     mydb.commit()
